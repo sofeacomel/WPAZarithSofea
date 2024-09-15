@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <h1>Let's Calculate our BMI with AuroraBalance</h1>
+        <img src="love-removebg-preview.png" alt="AuroraBalance Logo" class="logo">
+    </div>
+    <p>Your guide to a healthier, happier life</p>
+</header>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="health-info.html" class="nav-link">Health Info</a>
+    <a href="bmi-calculator.html" class="nav-link">BMI Calculator</a>
+</nav>
+
+<div class="content">
+    <h2>Calculate Your BMI</h2>
+    <p>Enter your height and weight to calculate your Body Mass Index (BMI) and understand your health status.</p>
+    <form>
+        <label for="height">Height (in centimeter):</label>
+        <input type="number" id="height" step="0.01" class="input-field"><br>
+        <label for="weight">Weight (in kilograms):</label>
+        <input type="number" id="weight" step="0.1" class="input-field"><br>
+        <button type="button" class="button" onclick="calculateBMI()">Calculate</button>
+    </form>
+    <p id="result" class="result-text"></p>
+    <p id="bmi-info" class="bmi-info"></p>
+</div>
+
+<div class="bmi-categories">
+    <h3>BMI Categories:</h3>
+    <ul>
+        <li class="underweight">Underweight: BMI less than 18.5</li>
+        <li class="normal-weight">Normal weight: BMI 18.5–24.9</li>
+        <li class="overweight">Overweight: BMI 25–29.9</li>
+        <li class="obese">Obese: BMI 30 or higher</li>
+    </ul>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 AuroraBalance | Designed with care</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

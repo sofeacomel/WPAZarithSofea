@@ -1,0 +1,251 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e6f2f5, #f5f5dc); /* Soft gradient background */
+    color: #4b3832; /* Rich Espresso Brown */
+}
+
+.header {
+    background-color: #a8b2a1; /* Cool Sage Green */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 70px;
+    margin-bottom:10px;
+
+}
+
+.header h1 {
+    margin: 0;
+    color: #4b3832; /* Rich Espresso Brown */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header p {
+    margin: 10px 0 0;
+    color: #6d5d5a; /* Slightly lighter Espresso Brown */
+    font-size: 18px;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This centers the text and image horizontally */
+    margin-left: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #a8b2a1; /* Cool Sage Green */
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-top: 3px solid #6f7e46; /* Burnt Orange accent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    margin: 0 20px;
+    color: #fff;
+    background-color: #4b3832; /* Rich Espresso Brown */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #d35400; /* Burnt Orange */
+    transform: translateY(-3px);
+}
+
+.content {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /*Soft shadow for a 3D effect  */
+    border: 1px solid #e6e6e6;
+} 
+
+.content-image {
+    width: 170px; /* Or whatever size you originally specified */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    color: #4b3832; /* Rich Espresso Brown */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: #6d5d5a; /* Slightly lighter Espresso Brown */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #88c9bf; /* Cool Sage Green */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #d35400; /* Burnt Orange */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4b3832; /* Rich Espresso Brown */
+    transform: translateY(-3px);
+}
+
+.result-text {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #4b3832; /* Rich Espresso Brown */
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #2e2e2e; /* Charcoal Gray */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 3px solid #d35400; /* Burnt Orange accent */
+}
+
+
+.bmi-categories {
+    margin-top: 30px;
+    text-align: left; /* Align the text to the left for better readability */
+    padding: 15px;
+    background-color: #f5f5dc; /* Use the same Soft Beige background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+}
+
+.bmi-categories h3 {
+    color: #4b3832; /* Rich Espresso Brown */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.bmi-categories ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.bmi-categories li {
+    color: #4b3832; /* Rich Espresso Brown */
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.bmi-categories .underweight {
+    color: blue; /* Blue for Underweight */
+}
+
+.bmi-categories .normal-weight {
+    color: green; /* Green for Normal weight */
+}
+
+.bmi-categories .overweight {
+    color: orange; /* Orange for Overweight */
+}
+
+.bmi-categories .obese {
+    color: red; /* Red for Obese */
+}
+
+
+.health-info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the boxes */
+    justify-content: center; /* Center the boxes within the grid */
+}
+
+.tip-box {
+    background-color: #fdf6e3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px); /* Ensure each box takes up 1/3 of the available space, minus gap */
+    max-width: calc(33.333% - 40px); /* Ensure the boxes don't exceed one-third width */
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box; /* Ensure padding and borders are included in the box's total width/height */
+}
+
+.tip-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4b3832; /* Rich Espresso Brown */
+}
+
+.tip-image {
+    width: 100%;
+    height:50%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+
+.tip-box p {
+    font-size: 14px;
+    color: #6d5d5a; /* Slightly lighter Espresso Brown */
+    line-height: 1.6;
+}
+
+
+.content-container{
+    justify-content: flex-start;
+    padding: 40px 0;
+    display: flex;
+    max-width:1000%;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.imagecstn {
+    max-width:35%;
+    height:auto; /* Ensure the image keeps its aspect ratio */
+    margin-left: 20;
+    padding:0;
+}
+
+.content-intro {
+    padding: 40px 20px;
+    text-align: center; /* Change the text alignment to left if needed */
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 800px;
+    margin-left: 0; /* Move the box to the left by setting left margin to 0 */
+    margin-right: auto; /* Keep the right side flexible */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow for a 3D effect */
+    border: 1px solid #e6e6e6;
+}
+
+        
